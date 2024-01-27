@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta "charset=UTF-8">
+  <title>Guild Wars 2 Survey</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1 id="title">Guild Wars 2 Survey</h1>
+  <p id="description">Please fill out a survey for your character</p>
+  <form id="survey-form">
+
+    <label id="name-label">Enter your character's name: <input id="name" type="text" required placeholder="Josh Burg"/>
+    </label>
+
+    <label id="email-label">Enter your account email:  <input id="email" type="email" required placeholder="jburg@gmail.com"/>
+    </label>
+
+    <label id="number-label">Enter Your total play time (hours): <input id="number" type="number" min="1" max="10000" required placeholder="25"/></label>
+
+    <label for="dropdown">Select Your character's class: <select id="dropdown"> </label>
+      <option name="none" value="none">(select one)</option>
+      <option name="warrior" value="1">Warrior</option>
+      <option name="guardian" value="2">Guardian</option>
+      <option name="revenant" value="3">Revenant</option>
+      <option name="ranger" value="4">Ranger</option>
+      <option name="engineer" value="5">Engineer</option>
+      <option name="thief" value="6">Thief</option>
+      <option name="elementalist" value="7">Elementalist</option>
+      <option name="necromancer" value="8">Necromancer</option>
+      <option name="mesmer" value="9">Mesmer</option>
+          </select>
+        </label>
+    
+    <legend>What content are you interested in? </legend>
+    <label for="Open World"><input id="Open World" type="radio" checked name="content" value="Open World"/> Open World</label>
+    <label for="Strikes"><input id="Strikes" type="radio" name="content" value="Strikes"/> Strikes</label>
+    <label for="Raids"><input id="Raids" type="radio" name="content" value="Raids"/> Raids</label>
+    <label for="PvP"><input id="PvP" type="radio" name="content" value="PvP"/> PvP</label>
+    <label for="WvW"><input id="WvW" type="radio" name="content" value="WvW"/> WvW</label>
+
+    <legend>What roles can you play? </legend>
+    <label for="DPS"><input id="DPS" type="checkbox" value="roles"/> DPS</label>
+    <label for="BoonDPS"><input id="BoonDPS" type="checkbox" value="roles"/> BoonDPS</label>
+    <label for="BoonHealer"><input id="BoonHealer" type="checkbox" value="roles" /> BoonHealer</label>
+
+<label for="extra">Please state any other information <textarea id="extra" name="extra" rows="3" cols="30" placeholder="I have played Guild Wars..."></textarea>
+        </label>
+    
+    <input type="submit" value="submit" id="submit" />
+  </form>
+</body>
+</html>
